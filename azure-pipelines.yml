@@ -35,4 +35,4 @@ stages:
         dockerfile: $(dockerfilePath)
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
-          $(date +%Y%m%d%H%M%S)
+          $(time)
