@@ -14,7 +14,7 @@ variables:
   imageRepository: 'anhnguyentsgtestdockerimage'
   containerRegistry: 'devtsgimageregistry.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
-  tag: '$(Date:yyyyMMdd)'
+  tag: '$(Build.BuildId)'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
